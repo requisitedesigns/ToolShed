@@ -1,0 +1,352 @@
+/* Start Imports */
+
+/* Start of Google Fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+/* End Imports */
+
+/* End of Google Fonts */
+
+/* Start of Globals */
+
+* {
+  font-family: "Press Start 2P", mono;
+}
+
+/* End of Globals */
+
+/* Start of Custom Grid Layout */
+
+.row {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.col_2 {
+  flex-basis: 50%;
+}
+
+.col_3 {
+  flex-basis: 33%;
+}
+
+.col_4 {
+  flex-basis: 25%;
+}
+
+.fit {
+  width: 100%;
+}
+
+/* End of Custom Grid Layout */
+
+/* Start of App Styling */
+
+body {
+  height: 100vh;
+  background: #2c165f !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* End of App Styling */
+
+/* Start of Navigation Styling */
+
+.appContainer {
+  width: 20vw;
+  height: 80vh;
+  border: 3px solid white;
+  border-radius: 5%;
+  background: url(./imgs/appContainerBG.jpg) rgba(0, 0, 0, 0.4);
+  background-size: cover;
+  background-blend-mode: multiply;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  box-shadow: 0px 5px 25px 25px rgba(255, 255, 255, 0.2);
+  text-align: center;
+}
+
+.navLinks a {
+  text-decoration: none;
+}
+
+.backButton {
+  display: flex;
+  flex-basis: 100%;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.spacer {
+  border-top: 1px solid white;
+}
+
+logo img {
+  max-width: 60%;
+  /*  background: rgba(255, 255, 255, 0.1); */
+  margin-top: 3%;
+}
+
+.appTitle {
+  color: white;
+}
+
+.subTitle {
+  font-size: 10px;
+  color: white;
+  margin-bottom: 0;
+  padding: 0 1%;
+}
+
+#navCol {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#vendorChoice {
+  font-size: 1em;
+  flex-basis: 100%;
+}
+
+#navCol ul {
+  flex-basis: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+}
+
+.navUL {
+  flex-direction: column;
+  flex-basis: 50% !important;
+  margin: 2% !important;
+}
+
+.navLinks {
+  list-style: none;
+}
+
+.navLinks.btn-info {
+  border: 4px double rgb(0, 0, 0);
+  border-radius: 5%;
+  margin-bottom: 3%;
+}
+
+button li {
+  color: #fff;
+}
+
+.fortiCol {
+  flex-wrap: nowrap !important;
+}
+
+.btn-secondary.disabled, .btn-secondary:disabled {
+  margin: 2%;
+}
+
+/* Start of Mobile Nav Styling */
+@media all and (min-width: 1921px) {
+  .modal-dialog {
+    max-width: 90% !important;
+  }
+}
+@media all and (width: 1920px) {
+  /* .appContainer {
+        width: 25vw;
+        height: 90vh;
+      } */
+  .appTitle {
+    font-size: 1.4rem;
+  }
+  .subTitle {
+    font-size: 0.8rem;
+  }
+  .modal-dialog {
+    max-width: 80% !important;
+  }
+}
+
+@media all and (max-width: 1919px) {
+}
+
+@media all and (max-width: 1919px) {
+  .appContainer {
+    width: 25vw;
+    height: 90vh;
+  }
+  .appTitle {
+    font-size: 1.4rem;
+  }
+  .subTitle {
+    font-size: 0.8rem;
+  }
+  .modal-dialog {
+    max-width: 80% !important;
+  }
+}
+
+@media all and (max-width: 1439px) {
+  .appContainer {
+    width: 35vw;
+    height: 90vh;
+  }
+  .appTitle {
+    font-size: 1.4rem;
+  }
+  .subTitle {
+    font-size: 0.8rem;
+  }
+  .modal-dialog {
+    max-width: 90% !important;
+  }
+}
+
+@media all and (max-width: 979px) {
+  .appContainer {
+    width: 50vw;
+    height: 90vh;
+  }
+  .appTitle {
+    font-size: 1.4rem;
+  }
+  .subTitle {
+    font-size: 0.8rem;
+  }
+  .modal-dialog {
+    max-width: 94% !important;
+  }
+}
+
+@media all and (max-width: 425px) {
+  .appContainer {
+    width: 90vw;
+    height: 90vh;
+  }
+  .appTitle {
+    font-size: 1.4rem;
+  }
+  .subTitle {
+    font-size: 0.8rem;
+  }
+  .modal-dialog {
+    max-width: 100% !important;
+  }
+}
+
+/* End Mobile Nav Styling */
+
+/* End of Navigation Styling */
+
+/* Start of Modal Styling */
+
+.modal-dialog {
+  max-width: 80%;
+}
+
+/* End of Modal Styling */
+
+/* Start of Text Area for Whitelist */
+
+.textFields {
+  height: 250px;
+  max-height: 250px;
+  width: 100%;
+  overflow-y: scroll;
+  resize: none;
+  font-size: 80%;
+}
+
+/* End of Text Area for Whitelist */
+
+/* Fortigate FW Rule */
+
+.modal {
+  max-height: 80vh !important;
+}
+
+.modal::-webkit-scrollbar {
+  display: none;
+}
+
+#fortigateFWrule {
+  font-size: 0.2rem !important;
+}
+
+#fwRuleForm {
+  display: flex;
+  flex-direction: column;
+}
+
+#fwRuleForm label {
+  margin-bottom: 2%;
+}
+
+label input {
+  display: block !important;
+  margin-top: 0.5%;
+  padding: 1%;
+  max-width: 40%;
+  min-width: 20%;
+}
+
+label select {
+  padding: 0.5%;
+  margin-left: 1%;
+  max-width: 20%;
+}
+
+/* End Fortigate FW Rule */
+
+/* Everything below this line is Stock Create-React-App Styling */
+
+.App {
+  text-align: center;
+}
+
+.isHidden {
+  display: none;
+}
+.isShown {
+  display: block;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
